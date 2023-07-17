@@ -1,0 +1,284 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+
+:root{
+    font-family: 'Staatliches', cursive;
+
+    font-size: 62.5%;
+}
+
+header{
+    background: #8E9AAF;
+    border: 1px solid red;
+    text-align: center;
+    
+    
+}
+
+.logo{
+    width: 13rem;
+   
+    
+    
+
+ }   
+
+
+    header h1{
+        color: #FFF;
+    
+    background: #CBC0D3;
+    font-size: 4rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 3.4rem; /* 85% */
+    letter-spacing: .2rem;
+    margin: 3.6rem 0  3.6rem 0 ;
+    padding: 0.6rem ;
+    
+    
+
+    }
+    
+
+    header p{
+        display: none;
+    }
+
+
+
+
+#page{
+    margin: 0 auto;
+    border: 2px solid red;
+    max-width: 33rem;
+  
+}
+
+
+
+.texto{
+    width: 21rem;
+    text-align: center;
+    padding-top: 1.4rem;
+    
+   
+   margin: auto;
+}
+
+
+
+img{
+    width: 100%;
+    border: 0;
+}
+
+main{
+    margin:  auto;
+    background: #EFF1FF;
+    display: grid;
+    gap: 3.2rem;
+    text-align: center;
+    padding-bottom: 6rem ;
+}
+
+.card{
+    padding: 0 3.2rem 0 3.2rem;
+    position: relative;
+}
+.card h2{
+    position: absolute;
+    background: #FEEAFA;
+    right: 4.8rem;
+    padding: .1rem 1rem;
+    border-radius: 2rem ;
+    top: 1rem;
+    color: #4A4E69;
+   
+       
+font-size: 2rem;
+font-style: normal;
+font-weight: 400;
+ 
+
+
+}
+
+
+.card{
+    animation-name: animation;
+    animation-duration: 2s;
+    animation-delay: 500ms;
+}
+
+.card h2{
+    animation-name: animation2;
+    animation-duration: 1s;
+    animation-delay: 500ms;
+}
+
+footer{
+    display: none;
+}
+
+
+main div:nth-child(7), div:nth-child(6){
+    display: none;
+}
+
+
+
+
+
+@keyframes animation{
+
+    0%{
+        opacity: 0;
+        transform: translateY(-60px);
+    }
+
+
+    
+
+
+    100%{
+        transform: translateY(0px);
+        opacity: 1;
+
+    }
+
+
+    
+
+
+}
+
+
+@keyframes animation2{
+
+    0%{
+        opacity: 0;
+        transform: translateY(120px);
+    }
+
+
+    50%{
+        opacity: 0;
+    }
+
+    100%{
+        transform: translateY(0);
+        opacity: 1;
+    }
+
+
+}
+
+
+
+@media(min-width:1120px){
+
+    #page{
+        max-width:  144rem;
+   
+        display: grid;
+        grid-template-areas: 
+        "header main main"
+        "header main main"
+        "header footer footer";
+
+       
+    }
+
+
+
+
+    header{
+        grid-area: header;
+        text-align: center;
+        padding-top: 3.2rem;
+        
+       
+    }
+
+    main{
+        grid-area: main;
+        display: grid;
+        padding-top: 6rem;
+        padding-bottom: 1rem;
+        background-color: white;
+    
+     
+        grid-template-areas:
+        "img1 img2 img5 "
+        "img4 img3  img6" ;
+        
+    }
+
+    main div:nth-child(2){
+        grid-area: img1;
+        }
+
+main div:nth-child(3){
+    grid-area: img2;
+    }
+
+    main div:nth-child(4){
+        grid-area: img3;
+        }
+
+
+main div:nth-child(5){
+    grid-area: img4;
+    }
+
+    main div:nth-child(6){
+        grid-area: img5;
+        }
+
+        main div:nth-child(6){
+            grid-area: img6;
+            }
+
+    footer{
+        grid-area: footer;
+        margin:3rem auto;
+    }
+
+main .texto{
+    display: none;
+}
+
+
+header p{
+    display:block;
+    
+   max-width: 35rem;
+    margin: auto;
+   
+    padding: 3.2rem 5rem;
+    color: #FFF;
+text-align: center;
+
+font-size: 2rem;
+font-style: normal;
+font-weight: 400;
+line-height: 2rem; 
+}
+
+
+footer{
+    display: block;
+}
+
+main div:nth-child(7), div:nth-child(6){
+    display: block;
+}
+
+
+
+}
